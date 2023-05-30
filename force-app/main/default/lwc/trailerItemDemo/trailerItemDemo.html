@@ -1,0 +1,17 @@
+<template>
+    <div class="slds-col slds-box slds-m-around_large customHover trailerBox" style={customCss}>
+        <div class="slds-grid slds-grid_align-spread">
+            <div class="slds-col">
+                <span>{trailerItem.Name} #{trailerItem.Number}</span>
+            </div>
+            <div class="slds-col slds-float_right" if:true={trailerItem.Time}>
+                <span class="infoCell slds-m-around_large">In progress: {trailerItem.Time}</span>
+            </div>
+            <div class="slds-col slds-float_right" if:false={trailerItem.Time} style=''>
+                <div class="slds-col infoCell">
+                    <lightning-icon icon-name="action:approval" class="slds-m-around_large"></lightning-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

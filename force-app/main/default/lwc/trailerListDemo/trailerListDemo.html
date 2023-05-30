@@ -1,0 +1,8 @@
+<template>
+    <div class="slds-grid slds-grid_vertical slds-text-align_center">
+        <template for:each={trailerList} for:item='trailerItem'>
+            <c-trailer-item-demo trailer-item={trailerItem} key={trailerItem.Name}>
+            </c-trailer-item-demo>
+        </template>
+    </div>
+</template>

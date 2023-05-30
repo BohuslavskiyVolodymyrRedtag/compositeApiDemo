@@ -1,0 +1,14 @@
+.customHover:hover {
+    background: #b6b6b6 !important;
+    color: black !important;
+    transition: .25s;
+}
+
+.trailerBox {
+    font-size: 3.2rem;
+    cursor: pointer;
+}
+
+.infoCell{
+    font-size: 2rem;
+}
